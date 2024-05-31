@@ -20,7 +20,8 @@ if hist_button:  # al hacer clic en el botón
     # mostrar un gráfico Plotly interactivo
     st.plotly_chart(fig, use_container_width=True)
 
-hist_button_2 = st.button('Construir diagrama de dispersión')  # crear un botón
+hist_button_2 = st.checkbox(
+    'Construir diagrama de dispersión')  # crear un botón
 
 if hist_button_2:  # al hacer clic en el botón
     # escribir un mensaje
